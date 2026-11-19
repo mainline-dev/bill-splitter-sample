@@ -41,22 +41,23 @@ You need a Mainline account on a team that has the Bill Splitter map.
 
 ### Claude Code
 
-Install the Mainline plugin, then add the Mainline server:
+Install the Mainline plugin:
 
 ```sh
 claude plugin marketplace add mainline-dev/plugins
 claude plugin install mainline@mainline-dev
-claude mcp add --transport http mainline https://mainline.dev/mcp
 ```
 
-Start Claude Code in this folder, type `/mcp`, choose `mainline` and authenticate. Your browser opens Mainline. Sign in, tick the team with the Bill Splitter map and approve.
+Start Claude Code in this folder, type `/mcp`, choose the Mainline server and authenticate. Your browser opens Mainline. Sign in, tick the team with the Bill Splitter map and approve.
 
 ### Codex
+
+Install the Mainline plugin and sign in:
 
 ```sh
 codex plugin marketplace add mainline-dev/plugins
 codex plugin add mainline@mainline-dev
-codex mcp add mainline --url https://mainline.dev/mcp
+codex mcp login mainline
 ```
 
 Your browser opens Mainline. Sign in, tick the team with the Bill Splitter map and approve. Start a new Codex session in this folder.
